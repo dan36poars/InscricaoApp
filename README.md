@@ -97,3 +97,13 @@ If you'd like to learn more about security in Rails, read
 ## Help
 
 If you need help you might be able to find an answer on our [docs](https://docs.replit.com) page. Feel free to report bugs and give us feedback [here](https://replit.com/support).
+
+## Commands for Rails
+
+- Create controllers
+
+in this sample the rails will be generate home controller.
+
+```bash
+  $ rails g controller home
+```
