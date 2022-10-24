@@ -100,10 +100,25 @@ If you need help you might be able to find an answer on our [docs](https://docs.
 
 ## Commands for Rails
 
+options:
+g = generate
+
 - Create controllers
 
 in this sample the rails will be generate home controller.
 
 ```bash
   $ rails g controller home
+```
+
+- Create model for a data structure
+
+```bash
+  $ rails g model subscript name email phone description language schooling
+```
+
+- Run the migrations
+
+```bash
+  $ rails db:migrate
 ```

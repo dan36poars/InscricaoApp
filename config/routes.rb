@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get '/home/index', to: 'home#index'
   root 'home#index'
-  resources :subscripts, only: [:new]
+  resources :subscripts, only: [:new, :create]
 end
