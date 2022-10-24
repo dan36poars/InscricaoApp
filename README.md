@@ -122,3 +122,13 @@ in this sample the rails will be generate home controller.
 ```bash
   $ rails db:migrate
 ```
+
+- Connect rails to DataBase console
+
+c = console
+
+```bash
+  $ rails c
+```
+
+to exit from DataBase Console type `exit`
