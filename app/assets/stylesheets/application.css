@@ -25,19 +25,17 @@
 
 #h1 {
   font-size: 70px;
-  margin: 50px 0 10px;
 }
 
 #h2 {
   font-size: 35px;
-  margin: 10px 0 10px;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   color: #f7ff07;
 }
 
 #button {
-  background-color: #73d216;
+  background-color: #45A049;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -48,7 +46,7 @@
 }
 
 #button:hover {
-  background-color: #8ae234;
+  background-color: #4CAF50;
 }
 
 #h2:after {
@@ -74,8 +72,9 @@
 }
 
 #menu ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 #menu ul li {
@@ -93,6 +92,91 @@
 #menu ul li a:hover {
     background-color: rgb(24, 139, 233);
 }
+
+input[type="text"], textarea, select {
+  width: 50%;
+  padding: 22px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 20%;
+}
+
+input[type="submit"] {
+  width: 15%;
+  background-color: #45A049;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 35px 0;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #4CAF50;  
+}
+
+form {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #959b8b;
+  padding-top: 20%;
+}
+
+form.new_subscript {
+  padding: 3% 0;
+}
+
+h1.center, h2.center {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+#h1 {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.white {
+  background-color: white;
+}
+
+#subscripts {
+  background-color: white;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+#subscripts th, #subscripts td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#subscripts th {
+  text-align: center;
+  background-color: #04AA60;
+  color: white;
+}
+
+.aling-form {
+  background-color: white;
+  padding: 40px 0;
+}
+
 
 /* ----------------------------------------------------
 Stylesheet for http://www.YourProject.com
