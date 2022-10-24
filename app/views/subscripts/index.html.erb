@@ -1,18 +1,20 @@
-<h1>Compradores dos cursos</h1>
-<h2>Perceba que muitos estão mudando suas vidas com ensino de excelencia!</h2>
-<table id="subscripts">
-  <tr>
-    <th>#</th>
-    <th>Nome</th>
-    <th>Produto</th>
-    <th>Escolaridade</th>
-  </tr>
-  <% @subscripts.each do |subscript| %>
+<h1 id="h1" class="center white">Compradores dos cursos</h1>
+<h2 class="center white">Perceba que muitos estão mudando suas vidas com ensino de excelencia!</h2>
+<div class="aling-form">  
+  <table id="subscripts">
     <tr>
-      <td><%= subscript.id %></td>
-      <td><%= subscript.name %></td>
-      <td><%= subscript.language %></td>
-      <td><%= subscript.schooling %></td>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Produto</th>
+      <th>Escolaridade</th>
     </tr>
-  <% end %>
-</table>
+    <% @subscripts.each do |subscript| %>
+      <tr>
+        <td><%= subscript.id %></td>
+        <td><%= subscript.name %></td>
+        <td><%= subscript.language %></td>
+        <td><%= subscript.schooling %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
