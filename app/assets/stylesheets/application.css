@@ -138,7 +138,7 @@ form.new_subscript {
 
 h1.center, h2.center {
   text-align: center;
-  font-size: 55px;
+  font-size: 40px;
   margin: 0;
 }
 
@@ -154,6 +154,29 @@ h1.center, h2.center {
 .white {
   background-color: white;
 }
+
+#subscripts {
+  background-color: white;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+#subscripts th, #subscripts td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#subscripts th {
+  text-align: center;
+  background-color: #04AA60;
+  color: white;
+}
+
+.aling-form {
+  background-color: white;
+  padding: 40px 0;
+}
+
 
 /* ----------------------------------------------------
 Stylesheet for http://www.YourProject.com
