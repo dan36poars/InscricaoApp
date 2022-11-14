@@ -131,4 +131,36 @@ c = console
   $ rails c
 ```
 
-to exit from DataBase Console type `exit`
+- The `bundle` command install all the dependencies from `Gemfile` file. It help us to install third-parties.
+- i.e ( insert the package sidekiq and run the command )
+
+```bash
+  $ bundle
+```
+
+- after execute the sidekiq
+
+```bash
+  $ bundle exec sidediq -d
+```
+
+- Create a JOB for application
+
+```bash
+  $ rails g job SubscriptCreate
+```
+
+
+to exit from DataBase sqlite3 Console type `.exit`
+
+- to execute the redis-server, type Y case appear a message.
+
+```bash
+  $ redis-server
+```
+
+- drop database e create it again
+
+```bash
+  $ rails db:drop db:create db:migrate
+```
