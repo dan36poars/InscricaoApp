@@ -1,0 +1,336 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#content {
+  background-color: #75507b;
+  color: white;
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+#h1 {
+  font-size: 70px;
+}
+
+#h2 {
+  font-size: 35px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: #f7ff07;
+}
+
+#button {
+  background-color: #45A049;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-aling: cente;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 25px;
+}
+
+#button:hover {
+  background-color: #4CAF50;
+}
+
+#h2:after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+  0%, 100% {
+    opacity: 1;    
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+#menu {
+    text-align: center;
+    background-color: rgb(37, 37, 39);
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(24, 139, 233);
+}
+
+input[type="text"], textarea, select {
+  width: 50%;
+  padding: 22px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 20%;
+}
+
+input[type="submit"] {
+  width: 15%;
+  background-color: #45A049;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 35px 0;
+  
+}
+
+input[type=submit]:hover {
+  background-color: #4CAF50;  
+}
+
+form {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #959b8b;
+  padding-top: 20%;
+}
+
+form.new_subscript {
+  padding: 3% 0;
+}
+
+h1.center, h2.center {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+#h1 {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.white {
+  background-color: white;
+}
+
+#subscripts {
+  background-color: white;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto;
+}
+#subscripts th, #subscripts td{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#subscripts th {
+  text-align: center;
+  background-color: #04AA60;
+  color: white;
+}
+
+.aling-form {
+  background-color: white;
+  padding: 40px 0;
+}
+
+
+/* ----------------------------------------------------
+Stylesheet for http://www.YourProject.com
+
+Updated: 11/20/2012
+Author: Eric Watson
+Website: http://www.websitecodetutorials.com
+------------------------------------------------------- 
+: Site Colors : 
+background ... #CCC;
+
+: Table Of Contents :
+Resets
+Defaults
+Typography
+Forms
+Layout
+Links
+Menus
+Global Classes
+Content
+---------------------------------------------------- */
+
+/* -------------------- Resets --------------------- */
+body, form, fieldset, ol, ul, li, h1, h2, h3, h4, h5, h6, p {
+margin:0;
+padding:0;
+}
+img {
+border:0; /* kills Gecko bug when img's are placed inside links */
+vertical-align:bottom; /* set vertical align to bottom for IE */
+}
+/* ------------------- Defaults ------------------- */
+html {
+height:100%; 
+overflow:auto; /* triggers 100% height in Opera 9.5 */
+overflow-y:scroll; /* creates a horizontal scrollbar, for a more consistent look & feel */
+}
+body {
+height:100%; /* helps make height 100% */
+font:100%/1.5 Arial, Helvetica, sans-serif; /* 100% = 16px, 93.75% = 15px, 87.5% = 14px, 81.25% = 13px, 75% = 12px - font-size in % prevents IE's resize bug */
+background:#ad7fa8;
+color:#333;
+}
+/* ------------------ Typography ------------------- */
+h1, h2, h3, h4, h5, h6, p {
+margin:0 0 1em;
+}
+p, ul, ol {
+font-size:1em;
+}
+ul {
+margin:0 0 1em 25px;
+list-style:none;
+}
+h1 {font-size:1.6em;}
+h2 {font-size:1.5em;}
+h3 {font-size:1.4em;}
+h4 {font-size:1.3em;}
+h5 {font-size:1.2em;}
+h6 {font-size:1.1em;}
+
+/* -------------------- Forms ---------------------- */
+fieldset {
+border:none;
+}
+form :focus {
+outline:0; /* removes Safari's blue border */
+}  
+input, select, textarea {
+font-size:1em;
+font-family:Arial, Helvetica, sans-serif;
+}
+label {
+cursor:pointer;
+vertical-align:middle;
+}
+input {
+vertical-align:middle;
+}
+textarea { 
+overflow:auto; /* removes scrollbar from IE when none is needed */
+}	
+/* -------------------- Layout --------------------- */
+#wrap {
+margin:0 auto; /* centers layout */
+min-height:100%; /* height 100% in all modern browsers */
+}
+#head {
+}
+#nav {
+}
+#content {
+}
+#left {
+float:left;
+}
+#foot {
+clear:both;
+}
+/* ------------------- Links ---------------------- */
+a {
+text-decoration:underline;
+color:#000;
+outline:0; /* removes dotted border */
+}
+a:visited {
+color:#999;
+}
+a:hover, a:focus, a:active {
+text-decoration:none;
+/* add-custom:outline-rule-here; */
+}
+/* --------------------- Menus -------------------- */
+/* Main Menu */
+#nav {
+}
+#nav li {
+}
+#nav a {
+text-decoration:none;
+}
+#nav a:hover, #nav a:focus, #nav a:active {
+}
+/* Foot Menu */
+#foot ul {
+}
+#foot li {
+}
+#foot a {
+text-decoration:none;
+}
+#foot a:hover, #foot a:focus, #foot a:active {
+}
+/* ---------------- Global Classes --------------- */
+.clear {
+clear:both;
+line-height:0;
+height:0;
+font-size:0;
+}
+.clearfix:after {
+content:" "; 
+display:block; 
+height:0;
+font-size:0; 
+clear:both; 
+visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* mac hide \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide */
+/* ------------------- Content ------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');

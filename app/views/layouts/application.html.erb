@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsRuby3</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+
+  <body>
+      <nav id="menu">
+        <ul>          
+          <li>
+            <%= link_to "Principal", root_path %>
+            <%= link_to "Seja aluno", new_subscript_path %>
+            <%= link_to "Compradores", subscripts_path %>
+            <a href="#">Cursos</a>
+            <a href="#">Preço</a>
+            <a href="#">Contato</a>
+          </li>
+        </ul>
+      </nav>
+  <%= yield %>
+  </body>
+
+  <script>
+    function typeWrite(elemento) {
+      const textArray = elemento.innerHTML.split('');
+      elemento.innerHTML = ' ';
+      textArray.forEach(function(letra, i){
+        setTimeout(function(){
+          elemento.innerHTML += letra;
+        }, 75 * i);
+      });
+    }
+
+    const title = document.querySelector(`#h2`);
+    typeWrite(title);
+  </script>
+</html>
