@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # Mapped from database
   namespace :api do
     namespace :v1 do
-      resources :subscripts, only: [:index]
+      resources :subscripts, only: [:index, :create]
     end
   end
 end
