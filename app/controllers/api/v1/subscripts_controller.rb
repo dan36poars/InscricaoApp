@@ -4,11 +4,8 @@ class Api::V1::SubscriptsController < ApplicationController
   end
 
   def create
-    @subscript = Subscript.new(subscript_params)
-
-    if @subscript.save
-      render json: @subscript, status: :created      
-    end
+    SubscriptCreateJob.perform_later(subscript_params)
+    render json: { message: "subscript was send success" }, :status => :created
   end
 
   private
